@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { create, list, read, update, remove, listBy, searchFilter,createImages,removeImage } = require('../controllers/product')
 const { authCheck, adminCheck } = require('../middlewares/authCheck')
-// @ENDPOINT http://localhost:5000/api/product
+// @ENDPOINT https://ecom-api-sage-iota.vercel.app/api/product
 router.post('/product', create)
 router.get('/products/:count', list)
 router.get('/product/:id', read)

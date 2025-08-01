@@ -18,7 +18,7 @@ exports.register = async (req, res) => {
             },
         });
         if (user) {
-            return res.status(400).json({ message: "Email already exits!!" });
+            return res.status(400).json({ message: "Email already exists!!" });
         }
 
         const hashPassword = await bcrypt.hash(password, 10);
